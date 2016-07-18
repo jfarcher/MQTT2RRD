@@ -18,7 +18,8 @@
 #
 import sys, os, argparse, atexit, time, logging, ConfigParser, grp, pwd, getpass, json
 from signal import SIGTERM
-import mosquitto, rrdtool
+import rrdtool
+import paho.mqtt.client as mosquitto
 
 logger=logging.getLogger("MQTT2RRD")
 
